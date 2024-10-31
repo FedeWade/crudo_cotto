@@ -1,11 +1,110 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
+	<!-- Header -->
+	<header>
+		<div class="text-center bg-image" style="
+				                background-image: url('{{ asset('images/furgone.jpg') }}');
+				                background-size: cover;
+				                background-position-y: -50px;
+				                height: 500px;
+				
+				            ">
+			<div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 500px;">
+				<div class="d-flex justify-content-center align-items-center h-100">
+					<div class="text-white">
+						<h1 class="mb-3" style="font-family: trenda-bold; text-transform: uppercase; ">Pescheria Crudo e Cotto</h1>
+						<h4 class="mb-4" style="font-family: bree;">Davide &amp; Cristina</h4>
+						<!--<a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="#!" role="button">Prodotti</a>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header -->
 
-<div id="home-wrapper">
-    <h1>Pescheria crudo e cotto del content</h1>
-    <p>Da Davide e Cristina content</p>
+	<!-- Start We Help Section -->
+		<div class="we-help-section">
+			<div class="container my-5">
+				<div class="row justify-content-between">
+					<div class="col-lg-7 mb-5 mb-lg-0">
+						<div class="imgs-grid">
+							<div class="grid grid-1"><img src="{{ asset('images/home/ss6-h.jpg') }}" alt="Untree.co"></div>
+							<div class="grid grid-2"><img src="{{ asset('images/home/ss1-h.jpg') }}" alt="Untree.co"></div>
+							<div class="grid grid-3"><img src="{{ asset('images/home/ss4-h.jpg') }}" alt="Untree.co"></div>
+						</div>
+					</div>
+					<div class="col-lg-5 ps-lg-5">
+						<h2 class="section-title mb-4">La Pescheria di Davide e Cristina</h2>
+						<p>Benvenuti nella nostra pescheria,
+						dove la freschezza del mare si incontra con la tradizione culinaria.
+						Offriamo un'ampia selezione di pesce crudo, cotto e fritto.
+						La nostra passione si riflette anche nei sughi, realizzati con ricette tradizionali e ingredienti genuini.
+						Venite a trovarci per assaporare il vero gusto del mare, direttamente sulla vostra tavola!</p>
 
-    
+						<ul class="list-unstyled custom-list my-4">
+							<li>Pesce crudo</li>
+							<li>Pesce fritto</li>
+							<li>Sughi</li>
+							<li>Piatti pronti</li>
+						</ul>
+						<p><a herf="#" class="a1 btn1">Scopri i prodotti</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End We Help Section -->
+
+<div class="bg-cards text-center">
+<div class="p-4 text-center" style="background-color: rgba(120, 211, 250, 0.2);">
+	<div class="bg-cards text-center container">
+		<div class="row p-4 text-center">
+			<h1 class="my-5" style="font-family: trenda-bold;">VIENI A TROVARCI</h1>
+
+			<div class="col-sm-6 mb-5">
+				<div class="card shadow text-center mx-auto" style="width: 400px;">
+					<div class="card-body rounded-top">
+						<h5 class="card-title">Padova</h5>
+						<p class="card-text">Via degli astonimi 3454, TV</p>
+					</div>
+					<div class="card-body border-top">
+						<table class="table table-borderless text-center mb-0">
+							<tbody class="fw-normal">
+								<tr>
+									<td class="col-1">Martedì - Giovedì:</td>
+									<td class="col-1">8:00 - 15:00</td>
+								</tr>
+								<tr>
+									<td class="col-1">Venerdì:</td>
+									<td class="col-1">8:00 - 17:00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5622.924877547963!2d12.289739313139256!3d45.19797697095024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e990131036d3f%3A0xd5cda097a1b7cabd!2sVia%20Nicol%C3%B2%20Zeno%2C%20229%2C%2030015%20Chioggia%20VE!5e0!3m2!1sen!2sit!4v1730036740742!5m2!1sen!2sit" width="398" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<div class="col-sm-6 mb-5">
+				<div class="card shadow text-center mx-auto" style="width: 400px;">
+					<div class="card-body rounded-top">
+						<h5 class="card-title">Treviso</h5>
+						<p class="card-text">Via degli astonimi 3454, TV</p>
+					</div>
+					<div class="card-body border-top">
+						<table class="table table-borderless text-center" style="margin-bottom: 20px; margin-top: 20px;">
+							<tbody class="fw-normal">
+								<tr>
+									<td class="col-1">Mercoledì:</td>
+									<td class="col-1">8:00 - 15:00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5622.924877547963!2d12.289739313139256!3d45.19797697095024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e990131036d3f%3A0xd5cda097a1b7cabd!2sVia%20Nicol%C3%B2%20Zeno%2C%20229%2C%2030015%20Chioggia%20VE!5e0!3m2!1sen!2sit!4v1730036740742!5m2!1sen!2sit" width="398" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 {% endblock %}

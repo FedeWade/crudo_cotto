@@ -1,101 +1,110 @@
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="mt-5">
+<div class="">
 
-  <footer class="text-white text-center text-lg-start bg-dark">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row mt-4">
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-          <img
-            id="logo"
-            src="{{ asset('images/logo-full.png') }}"
-            alt="Logo pescheria"
-            draggable="false"
-            height="260"
-          />
-          <!--<h5 class="text-uppercase mb-3 mt-4">Pescheria crudo e cotto</h5>
+	<footer
+		class="text-white text-center text-lg-start" style="background-color: rgb(21, 106, 148);">
+		<!-- Grid container -->
+		<div
+			class="container p-4">
+			<!--Grid row-->
+			<div
+				class="row mt-4">
+				<!--Grid column-->
+				<div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+					<img
+					id="logo" src="{{ asset('images/logo-full.png') }}" alt="Logo pescheria" draggable="false" height="260"/>
+					<!--<h5 class="text-uppercase mb-3 mt-4">Pescheria crudo e cotto</h5>
+										
+										          <p>
+										            Da Davide e Cristina
+										          </p>-->
 
-          <p>
-            Da Davide e Cristina
-          </p>-->
+					<div class="mt-4"><!-- Facebook -->
+						<!--<a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>-->
+						<!-- Dribbble -->
+						<!-- <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>-->
+						<!-- Twitter -->
+						<!-- <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>-->
+						<!-- Google + -->
+						<!-- <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>-->
+						<!-- Linkedin -->
+					</div>
+				</div>
+				<!--Grid column-->
 
-          <div class="mt-4">
-            <!-- Facebook -->
-            <!--<a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>-->
-            <!-- Dribbble -->
-            <!-- <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>-->
-            <!-- Twitter -->
-            <!-- <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>-->
-            <!-- Google + -->
-            <!-- <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>-->
-            <!-- Linkedin -->
-          </div>
-        </div>
-        <!--Grid column-->
+				<!--Grid column-->
+				<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+					<h5 class="text-uppercase mb-4 pb-1">Contatti</h5>
 
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4 pb-1">Contatti</h5>
+					<ul class="fa-ul p-0" style="list-style: none;">
+						<li class="mb-3">
+							<span class="fa-li">
+								<i class="bi bi-geo-alt-fill"></i>
+							</span>
+							<span class="ms-2">Via dei Colli 143, Padova</span>
+						</li>
+						<li class="mb-3">
+							<span class="fa-li">
+								<i class="bi bi-geo-alt-fill"></i>
+							</span>
+							<span class="ms-2">Via Manzoni 234, Treviso</span>
+						</li>
+						<li class="mb-3">
+							<span class="fa-li">
+								<i class="bi bi-envelope-fill"></i>
+							</span>
+							<span class="ms-2"><a class="link-light" href="mailto:webmaster@example.com">pescheria@gmail.com</a></span>
+						</li>
+						<li class="mb-3">
+							<span class="fa-li">
+								<i class="bi bi-telephone-fill"></i>
+							</span>
+							<span class="ms-2"><a class="link-light" href="tel:123-456-7890">344 149 7946</a></span>
+						</li>
+					</ul>
+				</div>
+				<!--Grid column-->
 
-          <ul class="fa-ul" >
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Via dei Colli 143, Padova</span>
-            </li>
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Via Manzoni 234, Treviso</span>
-            </li>
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">pescheria@gmail.com</span>
-            </li>
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 344 149 7946</span>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
+				<!--Grid column-->
+				<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+					<h5 class="text-uppercase mb-4">Orari</h5>
+					<p class="">PADOVA - Via dei Colli 154</p>
+					<table class="table text-center text-white">
+						<tbody class="fw-normal">
+							<tr class="table-active">
+								<td class="col-1">Mar - Gio:</td>
+								<td class="col-1">8:00 - 15:00</td>
+							</tr>
+							<tr class="table-active">
+								<td class="col-1">Ven:</td>
+								<td class="col-1">8:00 - 17:00</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="">TREVISO - Via Manzini 231</p>
+					<table class="table text-center text-white">
+						<tbody class="fw-normal">
+							<tr class="table-active">
+								<td class="col-1">Mer:</td>
+								<td class="col-1">8:00 - 16:00</td>
+							</tr>
 
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Orari</h5>
-          <p class="">PADOVA - Via dei Colli 154</p>
-          <table class="table text-center text-white">
-            <tbody class="fw-normal">
-              <tr>
-                <td class="col-1">Mar - Gio:</td>
-                <td class="col-1">8:00 - 15:00</td>
-              </tr>
-              <tr>
-                <td class="col-1">Ven:</td>
-                <td class="col-1">8:00 - 17:00</td>
-              </tr>
-            </tbody>
-          </table>
-        <p class="">TREVISO - Via Manzini 231</p>
-          <table class="table text-center text-white">
-            <tbody class="fw-normal">
-              <tr>
-                <td class="col-1">Mer:</td>
-                <td class="col-1">8:00 - 16:00</td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </div>
-    <!-- Grid container -->
+						</tbody>
+					</table>
+				</div>
+				<!--Grid column-->
+			</div>
+			<!--Grid row-->
+		</div>
+		<!-- Grid container -->
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2024 Copyright: Federico Ballarin
-      <!--<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>-->
-    </div>
-    <!-- Copyright -->
-  </footer>
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgb(0, 39, 61);">
+			© 2024 Copyright: Fede-Vale
+			<!--<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>-->
+		</div>
+		<!-- Copyright -->
+	</footer>
 
 </div>
 <!-- End of .container -->

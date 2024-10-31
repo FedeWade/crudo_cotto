@@ -3,5 +3,21 @@ body {
 }
 
 #content {
-    margin-top: 150px;
+    margin-top: 124px;
+}
+
+
+@font-face {
+    font-family: 'trenda-bold';
+    src: 
+        url('./fonts/Trenda-Bold.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bree';
+    src: 
+        url('./fonts/BreeSerif-Regular.ttf');
+    font-style: normal;
 }

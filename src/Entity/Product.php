@@ -103,5 +103,10 @@ class Product
         return $this;
     }
 
+    public function getImageUrl(): ?string
+    {
+        return "assets/images/products/" . $this->image;
+    }
+
    
 }
