@@ -9,7 +9,7 @@ body {
     background-color: #eff2f1; }
 
 .we-help-section {
-    padding: 7rem 0; }
+    padding: 7rem 0 4rem 0; }
     .we-help-section .imgs-grid {
       display: -ms-grid;
       display: grid;
@@ -49,6 +49,7 @@ body {
           grid-row: 1 / span 5;
           padding-left: 20px; }
         .we-help-section .imgs-grid .grid.grid-3 {
+          text-align: right;
           -ms-grid-column: 14;
           -ms-grid-column-span: 16;
           grid-column: 14 / span 16;
@@ -81,22 +82,22 @@ width: 100%; }
     padding: 12px 30px;
     border-radius: 30px;
     color: #ffffff;
-    background: #2f2f2f;
+    background: rgb(21, 106, 148);
     border-color: #2f2f2f; }
     .btn1:hover {
         color: #ffffff;
-        background: #222222;
-        border-color: #222222; }
+        background: rgb(0, 39, 61);
+        border-color: rgb(0, 39, 61); }
     .btn:active, .btn:focus {
         outline: none !important;
         -webkit-box-shadow: none;
         box-shadow: none; }
     .btn.btn-primary {
-        background: #3b5d50;
-        border-color: #3b5d50; }
+        background: rgb(21, 106, 148);
+        border-color: rgb(21, 106, 148); }
         .btn.btn-primary:hover {
-        background: #314d43;
-        border-color: #314d43; }
+        background: rgb(0, 39, 61);
+        border-color: rgb(0, 39, 61); }
     .btn.btn-secondary {
         color: #2f2f2f;
         background: #f9bf29;
@@ -119,7 +120,51 @@ width: 100%; }
     transition: .3s all ease;
     color: #ffffff; }
     .a1:hover {
-        background-color: rgb(0, 16, 26);;
+        background-color: rgb(0, 39, 61);
         text-decoration: none; }
     .a1.more {
         font-weight: 600; }
+
+
+
+.custom-shape-divider-bottom-1730453120 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1730453120 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+  transform: rotateY(180deg) ;
+}
+
+.custom-shape-divider-bottom-1730453120 .shape-fill {
+  fill: #afe2ffcb;
+}
+
+
+.custom-shape-divider-top-1730465172 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1730465172 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 49px;
+  transform: rotateX(180deg) ;
+}
+
+.custom-shape-divider-top-1730465172 .shape-fill {
+  fill: #afe2ffcb;
+}

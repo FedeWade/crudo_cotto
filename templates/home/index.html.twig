@@ -3,17 +3,15 @@
 {% block content %}
 	<!-- Header -->
 	<header>
-		<div class="text-center bg-image" style="
-				                background-image: url('{{ asset('images/furgone.jpg') }}');
-				                background-size: cover;
-				                background-position-y: -50px;
+		<div class="text-center" style="
+				               
 				                height: 500px;
 				
 				            ">
-			<div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 500px;">
+			<div class="mask" style="height: 500px;">
 				<div class="d-flex justify-content-center align-items-center h-100">
-					<div class="text-white">
-						<h1 class="mb-3" style="font-family: trenda-bold; text-transform: uppercase; ">Pescheria Crudo e Cotto</h1>
+					<div class="text-dark">
+						<h1 class="mb-3" style="font-family: trenda-bold; text-transform: uppercase; font-size:40px;">Pescheria Crudo e Cotto</h1>
 						<h4 class="mb-4" style="font-family: bree;">Davide &amp; Cristina</h4>
 						<!--<a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="#!" role="button">Prodotti</a>-->
 					</div>
@@ -23,7 +21,14 @@
 	</header>
 	<!-- Header -->
 
+	<div class="custom-shape-divider-top-1730465172" style="margin-top: -55px;">
+		<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+			<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+		</svg>
+	</div>
+
 	<!-- Start We Help Section -->
+	<div style="background: #afe2ffcb;">
 		<div class="we-help-section">
 			<div class="container my-5">
 				<div class="row justify-content-between">
@@ -35,7 +40,7 @@
 						</div>
 					</div>
 					<div class="col-lg-5 ps-lg-5">
-						<h2 class="section-title mb-4">La Pescheria di Davide e Cristina</h2>
+						<h1 class="section-title mb-4" style="font-family: trenda-bold;">LA PESCHERIA</h1>
 						<p>Benvenuti nella nostra pescheria,
 						dove la freschezza del mare si incontra con la tradizione culinaria.
 						Offriamo un'ampia selezione di pesce crudo, cotto e fritto.
@@ -53,58 +58,66 @@
 				</div>
 			</div>
 		</div>
+	</div>
 		<!-- End We Help Section -->
 
-<div class="bg-cards text-center">
-<div class="p-4 text-center" style="background-color: rgba(120, 211, 250, 0.2);">
-	<div class="bg-cards text-center container">
-		<div class="row p-4 text-center">
-			<h1 class="my-5" style="font-family: trenda-bold;">VIENI A TROVARCI</h1>
+			<div class="custom-shape-divider-bottom-1730453120">
+				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+					<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+				</svg>
+			</div>
 
-			<div class="col-sm-6 mb-5">
-				<div class="card shadow text-center mx-auto" style="width: 400px;">
-					<div class="card-body rounded-top">
+<div class="bg-cards text-center pb-5">
+<div class="p-4 text-center">
+	<div class="bg-cards text-center container-fluid">
+		<div class="row p-4 text-center justify-content-center">
+			<h1 class="mb-5" style="font-family: trenda-bold;">VIENI A TROVARCI</h1>
+
+			<div class="col-auto m-4">
+				<div class="card text-center mx-auto" style="border-radius: 35px 35px 0 0; box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;">
+					<div class="card-body rounded-top text-white" style="background: rgb(21, 106, 148);">
 						<h5 class="card-title">Padova</h5>
 						<p class="card-text">Via degli astonimi 3454, TV</p>
 					</div>
-					<div class="card-body border-top">
+					<div class="card-body border-top bg-light">
 						<table class="table table-borderless text-center mb-0">
-							<tbody class="fw-normal">
+							<tbody class="fw-normal bg-light">
 								<tr>
-									<td class="col-1">Martedì - Giovedì:</td>
-									<td class="col-1">8:00 - 15:00</td>
+									<td class="col-1 bg-light">Martedì - Giovedì:</td>
+									<td class="col-1 bg-light">8:00 - 15:00</td>
 								</tr>
 								<tr>
-									<td class="col-1">Venerdì:</td>
-									<td class="col-1">8:00 - 17:00</td>
+									<td class="col-1 bg-light">Venerdì:</td>
+									<td class="col-1 bg-light">8:00 - 17:00</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5622.924877547963!2d12.289739313139256!3d45.19797697095024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e990131036d3f%3A0xd5cda097a1b7cabd!2sVia%20Nicol%C3%B2%20Zeno%2C%20229%2C%2030015%20Chioggia%20VE!5e0!3m2!1sen!2sit!4v1730036740742!5m2!1sen!2sit" width="398" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5622.924877547963!2d12.289739313139256!3d45.19797697095024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e990131036d3f%3A0xd5cda097a1b7cabd!2sVia%20Nicol%C3%B2%20Zeno%2C%20229%2C%2030015%20Chioggia%20VE!5e0!3m2!1sen!2sit!4v1730036740742!5m2!1sen!2sit" width="420" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
-			<div class="col-sm-6 mb-5">
-				<div class="card shadow text-center mx-auto" style="width: 400px;">
-					<div class="card-body rounded-top">
+			<div class="col-auto m-4">
+				<div class="card text-center mx-auto" style="border-radius: 35px 35px 0 0; box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;">
+					<div class="card-body rounded-top text-white" style="background: rgb(21, 106, 148);">
 						<h5 class="card-title">Treviso</h5>
 						<p class="card-text">Via degli astonimi 3454, TV</p>
 					</div>
-					<div class="card-body border-top">
+					<div class="card-body border-top bg-light">
 						<table class="table table-borderless text-center" style="margin-bottom: 20px; margin-top: 20px;">
 							<tbody class="fw-normal">
 								<tr>
-									<td class="col-1">Mercoledì:</td>
-									<td class="col-1">8:00 - 15:00</td>
+									<td class="col-1 bg-light">Mercoledì:</td>
+									<td class="col-1 bg-light">8:00 - 15:00</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5622.924877547963!2d12.289739313139256!3d45.19797697095024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e990131036d3f%3A0xd5cda097a1b7cabd!2sVia%20Nicol%C3%B2%20Zeno%2C%20229%2C%2030015%20Chioggia%20VE!5e0!3m2!1sen!2sit!4v1730036740742!5m2!1sen!2sit" width="398" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5622.924877547963!2d12.289739313139256!3d45.19797697095024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e990131036d3f%3A0xd5cda097a1b7cabd!2sVia%20Nicol%C3%B2%20Zeno%2C%20229%2C%2030015%20Chioggia%20VE!5e0!3m2!1sen!2sit!4v1730036740742!5m2!1sen!2sit" width="420" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
 		</div>
 	</div>
+	
 </div>
 </div>
 {% endblock %}
