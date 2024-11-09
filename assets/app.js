@@ -11,6 +11,13 @@ import './styles/home.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import './bootstrap.js'
+
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
+
+// Initialization for ES Users
+import { Tab, initMDB } from "mdb-ui-kit";
+
+initMDB({ Tab });
 
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');

@@ -1,24 +1,29 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-	<!-- Header -->
-	<header>
-		<div class="text-center" style="
-				               
-				                height: 500px;
-				
-				            ">
-			<div class="mask" style="height: 500px;">
-				<div class="d-flex justify-content-center align-items-center h-100">
-					<div class="text-dark">
-						<h1 class="mb-3" style="font-family: trenda-bold; text-transform: uppercase; font-size:40px;">Pescheria Crudo e Cotto</h1>
-						<h4 class="mb-4" style="font-family: bree;">Davide &amp; Cristina</h4>
-						<!--<a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="#!" role="button">Prodotti</a>-->
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+	
+
+	<header class="bg-light">
+  <div
+    class="text-center bg-image"
+    style="
+      background-image: url('{{asset("images/furgone.jpg")}}');
+      height: 600px;
+	  background-position: 50% 30%;
+	  background-repeat: no-repeat;
+    "
+  >
+    <div class="mask" style="background-color: rgba(255, 255, 255, 0.6); width:100%; height:100%;">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-dark">
+          <h1 class="mb-3" style="font-family: trenda-bold; text-transform: uppercase; font-size:3em;">Pescheria Crudo e Cotto</h1>
+		  <h4 class="mb-4" style="font-family: bree; font-size:2em;">Davide &amp; Cristina</h4>
+          <!--<a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
 	<!-- Header -->
 
 	<div class="custom-shape-divider-top-1730465172" style="margin-top: -55px;">
@@ -28,15 +33,16 @@
 	</div>
 
 	<!-- Start We Help Section -->
-	<div style="background: #afe2ffcb;">
+	<div style="background: rgb(175,207,255);
+background: linear-gradient(0deg, rgba(175,207,255,1) 0%, rgba(124,177,255,1) 100%);">
 		<div class="we-help-section">
 			<div class="container my-5">
 				<div class="row justify-content-between">
 					<div class="col-lg-7 mb-5 mb-lg-0">
 						<div class="imgs-grid">
-							<div class="grid grid-1"><img src="{{ asset('images/home/ss6-h.jpg') }}" alt="Untree.co"></div>
-							<div class="grid grid-2"><img src="{{ asset('images/home/ss1-h.jpg') }}" alt="Untree.co"></div>
-							<div class="grid grid-3"><img src="{{ asset('images/home/ss4-h.jpg') }}" alt="Untree.co"></div>
+							<div class="grid grid-1"><img src="{{ asset('images/home/banco.jpg') }}" alt="Untree.co"></div>
+							<div class="grid grid-2"><img src="{{ asset('images/home/vongole.jpg') }}" alt="Untree.co"></div>
+							<div class="grid grid-3"><img src="{{ asset('images/home/people.jpg') }}" alt="Untree.co"></div>
 						</div>
 					</div>
 					<div class="col-lg-5 ps-lg-5">
@@ -47,13 +53,13 @@
 						La nostra passione si riflette anche nei sughi, realizzati con ricette tradizionali e ingredienti genuini.
 						Venite a trovarci per assaporare il vero gusto del mare, direttamente sulla vostra tavola!</p>
 
-						<ul class="list-unstyled custom-list my-4">
+						<ul class="list-unstyled custom-list my-4 mb-5">
 							<li>Pesce crudo</li>
 							<li>Pesce fritto</li>
 							<li>Sughi</li>
 							<li>Piatti pronti</li>
 						</ul>
-						<p><a herf="#" class="a1 btn1">Scopri i prodotti</a></p>
+						<a herf="/prodotti" class="a1 p-3 btn1 bg-dark" style="font-size:1em">Scopri i prodotti</a>
 					</div>
 				</div>
 			</div>
@@ -74,13 +80,13 @@
 			<h1 class="mb-5" style="font-family: trenda-bold;">VIENI A TROVARCI</h1>
 
 			<div class="col-auto m-4">
-				<div class="card text-center mx-auto" style="border-radius: 35px 35px 0 0; box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;">
-					<div class="card-body rounded-top text-white" style="background: rgb(21, 106, 148);">
-						<h5 class="card-title">Padova</h5>
-						<p class="card-text">Via degli astonimi 3454, TV</p>
+				<div class="card text-center mx-auto shadow-lg" style="border-radius: 35px 35px 0 0;">
+					<div class="card-body rounded-top text-white" style="background: rgb(124,177,255,1);">
+						<h5 class="card-title" style="font-size: 1.6em">Padova</h5>
+						<p class="card-text" style="font-size: 1.1em">Via degli astonimi 3454, TV</p>
 					</div>
 					<div class="card-body border-top bg-light">
-						<table class="table table-borderless text-center mb-0">
+						<table class="table table-borderless text-center mb-0" style="font-size: 1.1em">
 							<tbody class="fw-normal bg-light">
 								<tr>
 									<td class="col-1 bg-light">Martedì - Giovedì:</td>
@@ -97,13 +103,13 @@
 				</div>
 			</div>
 			<div class="col-auto m-4">
-				<div class="card text-center mx-auto" style="border-radius: 35px 35px 0 0; box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;">
-					<div class="card-body rounded-top text-white" style="background: rgb(21, 106, 148);">
-						<h5 class="card-title">Treviso</h5>
-						<p class="card-text">Via degli astonimi 3454, TV</p>
+				<div class="card text-center mx-auto shadow" style="border-radius: 35px 35px 0 0;">
+					<div class="card-body rounded-top text-white" style="background: rgb(124,177,255,1);">
+						<h5 class="card-title" style="font-size: 1.6em">Treviso</h5>
+						<p class="card-text" style="font-size: 1.1em">Via degli astonimi 3454, TV</p>
 					</div>
 					<div class="card-body border-top bg-light">
-						<table class="table table-borderless text-center" style="margin-bottom: 20px; margin-top: 20px;">
+						<table class="table table-borderless text-center" style="margin-bottom: 20px; margin-top: 20px; font-size: 1.1em">
 							<tbody class="fw-normal">
 								<tr>
 									<td class="col-1 bg-light">Mercoledì:</td>
