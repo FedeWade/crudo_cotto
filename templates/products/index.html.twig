@@ -2,88 +2,38 @@
 
 {% block content %}
 
-	<section class="py-5" style="background-color: #eee;">
-	<div class="text-center">
-		<h1 style="font-family: trenda-bold; text-center">I NOSTRI PRODOTTI</h1>
-	</div>
+	<section class="py-5" style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
+		<div class="text-center">
+			<h1 class="text-dark" style="font-family: trenda-bold; text-center">I NOSTRI PRODOTTI</h1>
+		</div>
 		<div class="container py-5">
-																	<ul class="nav nav-tabs" id="myTab" role="tablist">
-																		<li class="nav-item" role="presentation">
-																			<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-																		</li>
-																		<li class="nav-item" role="presentation">
-																			<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-																		</li>
-																		<li class="nav-item" role="presentation">
-																			<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-																		</li>
-																		</ul>
-																		<div class="tab-content" id="myTabContent">
-																		<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-																		<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-																		<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-																		</div>
-																		
-			{% for product in products %}
-				<div class="row justify-content-center mb-3">
-					<div class="col-md-12 col-xl-10">
-						<div class="card shadow-0 border rounded-3">
-							<div class="card-body">
-								<div class="row">
-									<div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
-										<div class="bg-image hover-zoom ripple rounded ripple-surface">
-											<img src="{{ product.getImageUrl() }}" class="w-100"/>
-											<a href="#!">
-												<div class="hover-overlay">
-													<div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="col-md-6 col-lg-6 col-xl-6">
-										<h5>{{ product.name }}</h5>
-										<p class="mb-4 mb-md-0">
-											{{ product.description }}
-										</p>
+																
+			<!-- Tabs navs -->
+			<ul class="nav nav-tabs nav-pills justify-content-center mb-3" id="myTab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="crudo-tab" data-bs-toggle="tab" data-bs-target="#crudo" type="button" role="tab" aria-controls="crudo" aria-selected="true" style="font-family: trenda-bold; font-size: 1.6em">CRUDO</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="cotto-tab" data-bs-toggle="tab" data-bs-target="#cotto" type="button" role="tab" aria-controls="cotto" aria-selected="false" style="font-family: trenda-bold; font-size: 1.6em">COTTO</button>
+				</li>
+			</ul>
+			<!-- Tabs navs -->
 
-										<!--<div class="mt-1 mb-0 text-muted small">
-										                  <span>100% cotton</span>
-										                  <span class="text-primary"> • </span>
-										                  <span>Light weight</span>
-										                  <span class="text-primary"> • </span>
-										                  <span>Best finish<br /></span>
-										                </div>
-										                <div class="mb-2 text-muted small">
-										                  <span>Unique design</span>
-										                  <span class="text-primary"> • </span>
-										                  <span>For men</span>
-										                  <span class="text-primary"> • </span>
-										                  <span>Casual<br /></span>
-										                </div>-->
-									</div>
-									<div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
-										<div class="d-flex flex-row align-items-center mb-1">
-											<h4 class="mb-3 me-1">{{ product.price }}
-												&euro;/Kg</h4>
-										</div>
-										<div class="mb-1 text-muted small">
-											<p class="mb-0">Vaschette da 250g:</p>
-											<p class="mt-0 mb-1 fs-5">
-												<span class="">{{ product.price/4 |round}}
-													&euro;</span>
-												circa</p>
-										</div>
-										<div class="d-flex flex-column mt-3">
-											<button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm" type="button">Aggiungi all'ordine</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="crudo" role="tabpanel" aria-labelledby="crudo-tab">
+					{% for product in productsCrudo %}
+						{% include 'products/product_list.html.twig' with {'product': product} %}
+					{% endfor %}
 				</div>
-
-			{% endfor %}
+				<div class="tab-pane fade" id="cotto" role="tabpanel" aria-labelledby="cotto-tab">
+					{% for product in productsCotto %}
+						{% include 'products/product_list.html.twig' with {'product': product} %}
+					{% endfor %}
+				</div>
+			</div>
+			<!-- Tabs content -->
+																		
+		
 		</div>
 	</section>
 {% endblock %}

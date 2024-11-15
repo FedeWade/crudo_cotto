@@ -11,6 +11,8 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\MoneyField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\NumberField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\Textarea;
 
 class ProductCrudController extends AbstractCrudController
 {
@@ -24,9 +26,15 @@ class ProductCrudController extends AbstractCrudController
     {
         return [
             //IdField::new('id'),
+            ChoiceField::new('category')->setChoices([
+                'Crudo' => 'crudo',
+                'Cotto' => 'cotto',
+            ])->renderExpanded(),
             TextField::new('name'),
             TextEditorField::new('description'),
-            NumberField::new('price')->setRequired(false),
+            TextEditorField::new('ingredients'),
+            NumberField::new('priceKg')->setRequired(false),
+            NumberField::new('priceUnit')->setRequired(false),
             ImageField::new('image')->setBasePath('assets/images/products')->setUploadDir('public/assets/images/products')->setRequired(false),
             BooleanField::new('enabled'),
         ];

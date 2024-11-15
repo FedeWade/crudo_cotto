@@ -15,13 +15,22 @@ class Product
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    private ?string $category = null;
+
+    #[ORM\Column(length: 255)]
     private ?string $name = null;
 
     #[ORM\Column(length: 600, nullable: true)]
     private ?string $description = null;
 
+    #[ORM\Column(length: 600, nullable: true)]
+    private ?string $ingredients = null;
+
     #[ORM\Column()]
-    private ?float $price = null;
+    private ?float $priceKg = null;
+
+    #[ORM\Column()]
+    private ?float $priceUnit = null;
 
     #[ORM\Column(length: 255)]
     private ?string $image = null;
@@ -106,6 +115,54 @@ class Product
     public function getImageUrl(): ?string
     {
         return "assets/images/products/" . $this->image;
+    }
+
+    public function getCategory(): ?string
+    {
+        return $this->category;
+    }
+
+    public function setCategory(string $category): static
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    public function getIngredients(): ?string
+    {
+        return $this->ingredients;
+    }
+
+    public function setIngredients(?string $ingredients): static
+    {
+        $this->ingredients = $ingredients;
+
+        return $this;
+    }
+
+    public function getPriceKg(): ?float
+    {
+        return $this->priceKg;
+    }
+
+    public function setPriceKg(float $priceKg): static
+    {
+        $this->priceKg = $priceKg;
+
+        return $this;
+    }
+
+    public function getPriceUnit(): ?float
+    {
+        return $this->priceUnit;
+    }
+
+    public function setPriceUnit(float $priceUnit): static
+    {
+        $this->priceUnit = $priceUnit;
+
+        return $this;
     }
 
    

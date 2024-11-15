@@ -126,7 +126,6 @@ width: 100%; }
         font-weight: 600; }
 
 
-
 .custom-shape-divider-bottom-1730453120 {
   bottom: 0;
   left: 0;
@@ -167,4 +166,13 @@ width: 100%; }
 
 .custom-shape-divider-top-1730465172 .shape-fill {
   fill: #7cb1ff;
+}
+
+.nav-link.active {
+  background: #262626!important;
+  color: white!important;
+}
+
+.nav-link {
+  color:#212529!important;
 }

@@ -14,10 +14,13 @@ class ProductsController extends AbstractController
     #[Route('/prodotti', name: 'app_products')]
     public function index(EntityManagerInterface $em): Response
     {
-        $enabledProducts = $em->getRepository(Product::class)->findBy(['enabled' => true]);
+        $productsCrudo = $em->getRepository(Product::class)->findBy(['enabled' => true, 'category' => 'crudo']);
+        $productsCotto = $em->getRepository(Product::class)->findBy(['enabled' => true, 'category' => 'cotto']);
+
 
         return $this->render('products/index.html.twig', [
-            'products' => $enabledProducts,
+           'productsCrudo'=> $productsCrudo,
+           'productsCotto'=> $productsCotto,
         ]);
     }
 }
